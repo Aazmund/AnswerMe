@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ebf1f9"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Где вы покупаете одежду?"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_answer1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Торговый центр" />
+
+                <CheckBox
+                    android:id="@+id/cb_answer1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Рынок" />
+
+                <CheckBox
+                    android:id="@+id/cb_answer1_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Интернет" />
+
+                <EditText
+                    android:id="@+id/et_answer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Свой вариант..."
+                    android:inputType="text" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Почему именно там?" />
+
+                <CheckBox
+                    android:id="@+id/cb_answer2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Хорошая цена и качество" />
+
+                <CheckBox
+                    android:id="@+id/cb_answer2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Близкое расположение к дому" />
+
+                <CheckBox
+                    android:id="@+id/cb_answer2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Хороший выбор продукции" />
+
+                <EditText
+                    android:id="@+id/et_answer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Свой вариант..."
+                    android:inputType="textPersonName" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="Что вам не нравится в вашем магазине ?"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_answer3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Неквалифицированный персонал" />
+
+                <CheckBox
+                    android:id="@+id/cb_answer3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Мало акций" />
+
+                <EditText
+                    android:id="@+id/et_answer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="Свой вариант..."
+                    android:inputType="textPersonName" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:onClick="cont_reg"
+                        android:textColor="@color/colorAccent"
+                        android:text="Подтвердить" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
